@@ -1,0 +1,27 @@
+{
+  "name": "polymer-avenger",
+  "version": "0.0.1",
+  "homepage": "https://github.com/andreyluiz/polymer-avenger",
+  "authors": [
+    "Andrey Luiz <andreyluiz.developer@gmail.com>"
+  ],
+  "description": "Simple application for testing Polymer",
+  "main": "index.html",
+  "keywords": [
+    "node",
+    "bower",
+    "polymer"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "~3.3.2",
+    "polymer": "Polymer/polymer#~0.5.4"
+  }
+}
