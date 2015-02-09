@@ -1,0 +1,11 @@
+<link rel="import" href="../bower_components/polymer/polymer.html">
+
+<polymer-element name="column-element" attributes="smallersize smallsize mediumsize largesize classes" noscript>
+  <template>
+    <style>@import '../bower_components/bootstrap/dist/css/bootstrap.min.css';
+           @import '../css/main.css';</style>
+    <div class="{{smallersize == null ? '' : 'col-xs-' + smallersize}} {{smallsize == null ? '' : 'col-sm-' + smallsize}} {{mediumsize == null ? '' : 'col-md-' + mediumsize}} {{largesize == null ? '' : 'col-lg-' + largesize}} {{classes == null ? '' : classes}}">
+      <content></content>
+    </div>
+  </template>
+</polymer-element>

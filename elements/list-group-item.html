@@ -1,0 +1,8 @@
+<link rel="import" href="../bower_components/polymer/polymer.html">
+
+<polymer-element name="list-group-item" attributes="href text active" noscript>
+  <template>
+    <style>@import '../bower_components/bootstrap/dist/css/bootstrap.min.css';</style>
+    <a href="{{href}}" class="list-group-item {{active == null ? '' : 'active'">{{text}}</a>
+  </template>
+</polymer-element>

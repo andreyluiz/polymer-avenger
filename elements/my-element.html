@@ -1,0 +1,23 @@
+<link rel="import" href="../bower_components/polymer/polymer.html">
+
+<polymer-element name="my-element" attributes="owner color">
+  <template>
+    <button on-click="{{setFocus}}">Focus</button><input type="text" value="{{owner}}" placeholder="Enter the name..." id="owner"><br>
+    <input type="range" value="{{age}}"><br>
+    <span>Hello, <span style="color: {{color}}">{{owner}}</span>. You have {{age}} years.</span><br>
+    <span id="loading">Loading...</span>
+  </template>
+  <script>
+    Polymer({
+      age: 25,
+      owner: 'Andrey',
+      color: 'red',
+      ownerChanged: function() {
+        this.owner = this.owner[0].toUpperCase() + this.owner.slice(1);
+      },
+      setFocus: function() {
+        this.$.owner.focus();
+      }
+    });
+  </script>
+</polymer-element>

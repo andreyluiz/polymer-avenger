@@ -1,0 +1,11 @@
+<link rel="import" href="../bower_components/polymer/polymer.html">
+
+<polymer-element name="row-element" attributes="classes" noscript>
+  <template>
+    <style>@import '../bower_components/bootstrap/dist/css/bootstrap.min.css';
+           @import '../css/main.css';</style>
+    <div class="row {{addclasses == null ? '' : addclasses}}">
+      <content select="column-element"></content>
+    </div>
+  </template>
+</polymer-element>

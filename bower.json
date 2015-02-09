@@ -22,6 +22,7 @@
   ],
   "dependencies": {
     "bootstrap": "~3.3.2",
-    "polymer": "Polymer/polymer#~0.5.4"
+    "polymer": "Polymer/polymer#~0.5.4",
+    "apply-author-styles": "eee-c/apply-author-styles"
   }
 }
